@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_exam/screens/messages_screen.dart';
+import 'package:flutter_exam/screens/search_screen.dart';
 import 'package:flutter_exam/utils/app_colors.dart';
 import 'package:flutter_exam/utils/app_extations.dart';
 import 'package:flutter_exam/utils/app_images.dart';
@@ -77,21 +77,21 @@ class _PostScreenState extends State<PostScreen> {
             ),
             UserLikeItem(
               name: "Julian Krämer",
-              imageUrl: AppImages.girl,
+              image: AppImages.girl,
               isLiked: true,
             ),
 
             10.he,
             UserLikeItem(
               name: "Celina Graf",
-              imageUrl: AppImages.girl2,
+              image: AppImages.girl2,
               isLiked: false,
             ),
             10.he,
 
             UserLikeItem(
               name: "Celina Graf",
-              imageUrl: AppImages.girl2,
+              image: AppImages.girl2,
               isLiked: false,
             ),
 
@@ -137,7 +137,7 @@ class _PostScreenState extends State<PostScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (ctx) => MessagesScreen(),
+                                  builder: (ctx) => SearchScreen(),
                                 ),
                               );
                             },
@@ -158,20 +158,20 @@ class _PostScreenState extends State<PostScreen> {
 
 class UserLikeItem extends StatelessWidget {
   final String name;
-  final String imageUrl;
+  final String image;
   final bool isLiked;
 
   UserLikeItem({
     super.key,
     required this.name,
-    required this.imageUrl,
+    required this.image,
     required this.isLiked,
   });
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircleAvatar(backgroundImage: AssetImage(imageUrl)),
+      leading: CircleAvatar(backgroundImage: AssetImage(image)),
       title: Text(name, style: TextStyle(fontSize: 12.sp)),
       trailing: Icon(
         isLiked ? Icons.favorite : Icons.favorite_border,

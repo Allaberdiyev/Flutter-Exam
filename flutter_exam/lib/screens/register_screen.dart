@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_exam/screens/login_in_screen.dart';
 import 'package:flutter_exam/utils/app_colors.dart';
 import 'package:flutter_exam/utils/app_extations.dart';
-import 'package:flutter_exam/utils/app_widgets.dart';
+import 'package:flutter_exam/utils/google_facegook.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class RegisterScreen extends StatefulWidget {

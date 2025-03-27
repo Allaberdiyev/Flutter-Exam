@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_exam/screens/home_screen.dart';
 import 'package:flutter_exam/screens/register_screen.dart';
 import 'package:flutter_exam/utils/app_colors.dart';
 import 'package:flutter_exam/utils/app_extations.dart';
-import 'package:flutter_exam/utils/app_widgets.dart';
+import 'package:flutter_exam/utils/google_facegook.dart';
+import 'package:flutter_exam/utils/bottomBar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginInScreen extends StatefulWidget {
@@ -28,7 +28,7 @@ class _LoginInScreenState extends State<LoginInScreen> {
     if (_emailError == null && _passwordError == null) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (ctx) => HomeScreen()),
+        MaterialPageRoute(builder: (ctx) => Bottombar()),
       );
     }
   }

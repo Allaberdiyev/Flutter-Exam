@@ -3,7 +3,6 @@ import 'package:flutter_exam/screens/commends_screen.dart';
 import 'package:flutter_exam/utils/app_colors.dart';
 import 'package:flutter_exam/utils/app_extations.dart';
 import 'package:flutter_exam/utils/app_images.dart';
-import 'package:flutter_exam/utils/bottomBar.dart';
 import 'package:flutter_exam/utils/notification_info.dart';
 
 class NotificationScreen extends StatefulWidget {
@@ -109,7 +108,6 @@ class _NotificationScreenState extends State<NotificationScreen> {
           );
         },
       ),
-      bottomNavigationBar: Bottombar(),
     );
   }
 }

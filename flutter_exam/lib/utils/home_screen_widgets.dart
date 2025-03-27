@@ -17,16 +17,13 @@ Widget people(String image, String text) {
           gradient: LinearGradient(colors: [AppColors.blue2, AppColors.blue3]),
           borderRadius: BorderRadius.circular(13.r),
         ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(10.r),
-          child: Container(
-            decoration: BoxDecoration(
-              color: AppColors.white,
-              borderRadius: BorderRadius.circular(10.r),
-            ),
-            padding: EdgeInsets.all(4),
-            child: Image.asset(image, fit: BoxFit.fill),
+        child: Container(
+          decoration: BoxDecoration(
+            color: AppColors.white,
+            borderRadius: BorderRadius.circular(10.r),
           ),
+          padding: EdgeInsets.all(4),
+          child: Image.asset(image, fit: BoxFit.fill),
         ),
       ),
       13.he,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_exam/utils/app_colors.dart';
 import 'package:flutter_exam/utils/app_extations.dart';
 import 'package:flutter_exam/utils/app_images.dart';
-import 'package:flutter_exam/utils/bottomBar.dart';
 import 'package:flutter_exam/utils/home_screen_widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -125,8 +124,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-
-      bottomNavigationBar: Bottombar(),
     );
   }
 }

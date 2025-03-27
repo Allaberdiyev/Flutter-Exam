@@ -116,7 +116,6 @@ class _SearchScreenState extends State<SearchScreen> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          icon: Icon(Icons.add, color: AppColors.white),
         ),
       ),
 

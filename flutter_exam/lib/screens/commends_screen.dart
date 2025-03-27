@@ -6,10 +6,6 @@ import 'package:flutter_exam/utils/app_images.dart';
 import 'package:flutter_exam/utils/commends_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
-  runApp(CommendsScreen());
-}
-
 class CommendsScreen extends StatefulWidget {
   CommendsScreen({super.key});
 

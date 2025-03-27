@@ -3,7 +3,6 @@ import 'package:flutter_exam/screens/settings_screen.dart';
 import 'package:flutter_exam/utils/app_colors.dart';
 import 'package:flutter_exam/utils/app_extations.dart';
 import 'package:flutter_exam/utils/app_images.dart';
-import 'package:flutter_exam/utils/bottomBar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PersonalProfileScreen extends StatefulWidget {
@@ -227,7 +226,6 @@ class _PersonalProfileScreenState extends State<PersonalProfileScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: Bottombar(),
     );
   }
 
